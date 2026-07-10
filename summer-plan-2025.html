@@ -1022,7 +1022,7 @@ function goToday() {
   const today = new Date();
   today.setHours(0,0,0,0);
   if (today < START_DATE) { currentDate = new Date(START_DATE); }
-  else if (today > END_DATE) { currentDate = new Date(END_DATE); }
+  else if (today > END_DATE) { currentDate = new Date(START_DATE); }
   else { currentDate = today; }
   renderMain();
 }
@@ -1046,10 +1046,8 @@ const today = new Date();
 today.setHours(0,0,0,0);
 if (today >= START_DATE && today <= END_DATE) {
   currentDate = today;
-} else if (today < START_DATE) {
-  currentDate = new Date(START_DATE);
 } else {
-  currentDate = new Date(END_DATE);
+  currentDate = new Date(START_DATE);
 }
 renderMain();
 </script>
