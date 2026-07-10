@@ -494,6 +494,14 @@
 const START_DATE = new Date(2025, 6, 11);  // July 11
 const END_DATE   = new Date(2025, 7, 29);  // Aug 29 (inclusive)
 
+// Normalize any date to plan year (2025), clamp by month-day
+function clampToPlanDate(date) {
+  const planDate = new Date(2025, date.getMonth(), date.getDate());
+  if (planDate < START_DATE) return new Date(START_DATE);
+  if (planDate > END_DATE) return new Date(END_DATE);
+  return planDate;
+}
+
 // Phase definitions: { start (Date), end (Date), name, color, emoji }
 const PHASES = [
   { start: new Date(2025,6,11), end: new Date(2025,6,12), name:'硬件学习期',       color:'#5b6fff', emoji:'🔌' },
@@ -1020,11 +1028,7 @@ function shiftDate(delta) {
 }
 
 function goToday() {
-  const today = new Date();
-  today.setHours(0,0,0,0);
-  if (today < START_DATE) { currentDate = new Date(START_DATE); }
-  else if (today > END_DATE) { currentDate = new Date(END_DATE); }
-  else { currentDate = today; }
+  currentDate = clampToPlanDate(new Date());
   renderMain();
 }
 
@@ -1043,15 +1047,7 @@ loadData();
 loadReviewData();
 setupReviewAutoSave();
 // Default to today (clamped to plan range)
-const today = new Date();
-today.setHours(0,0,0,0);
-if (today >= START_DATE && today <= END_DATE) {
-  currentDate = today;
-} else if (today < START_DATE) {
-  currentDate = new Date(START_DATE);
-} else {
-  currentDate = new Date(END_DATE);
-}
+currentDate = clampToPlanDate(new Date());
 renderMain();
 </script>
 
