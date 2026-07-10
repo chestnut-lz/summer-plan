@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>鈽€锔?鏆戝亣璁″垝琛?2025 路 7.11 鈥?8.29</title>
+<title>☀️ 暑假计划表 2025 · 7.11 — 8.29</title>
 <style>
   :root {
     --bg: #f3f4f6;
@@ -36,7 +36,7 @@
     font-size: 16px;
   }
 
-  /* 鈹€鈹€ Header 鈹€鈹€ */
+  /* ── Header ── */
   .header {
     background: var(--card);
     border-bottom: 1px solid var(--border);
@@ -59,7 +59,7 @@
   }
   .header h1 span { font-size: 1.6rem; }
 
-  /* 鈹€鈹€ Phase indicator 鈹€鈹€ */
+  /* ── Phase indicator ── */
   .phase-tag {
     display: inline-flex;
     align-items: center;
@@ -72,13 +72,13 @@
     white-space: nowrap;
   }
 
-  /* 鈹€鈹€ Layout 鈹€鈹€ */
+  /* ── Layout ── */
   .layout {
     display: flex;
     min-height: calc(100vh - 72px);
   }
 
-  /* 鈹€鈹€ Sidebar: date list 鈹€鈹€ */
+  /* ── Sidebar: date list ── */
   .sidebar {
     width: 240px;
     flex-shrink: 0;
@@ -128,14 +128,14 @@
   .date-row .day-num { font-weight: 500; min-width: 1.8em; }
   .date-row .weekday { color: var(--text2); font-size: .78rem; }
 
-  /* 鈹€鈹€ Main 鈹€鈹€ */
+  /* ── Main ── */
   .main {
     flex: 1;
     padding: 28px 40px;
     max-width: 860px;
   }
 
-  /* 鈹€鈹€ Date header 鈹€鈹€ */
+  /* ── Date header ── */
   .date-header {
     display: flex;
     align-items: center;
@@ -166,7 +166,7 @@
   }
   .nav-btn:hover { background: var(--pri-light); border-color: var(--pri); }
 
-  /* 鈹€鈹€ Daily quote bar 鈹€鈹€ */
+  /* ── Daily quote bar ── */
   .quote-bar {
     background: linear-gradient(135deg, #f0f4ff 0%, #faf5ff 100%);
     border-radius: var(--radius);
@@ -190,7 +190,7 @@
     margin-top: 2px;
   }
 
-  /* 鈹€鈹€ Task card 鈹€鈹€ */
+  /* ── Task card ── */
   .task-card {
     background: var(--card);
     border-radius: var(--radius);
@@ -235,7 +235,7 @@
     border-color: var(--done);
   }
   .task-check:checked::after {
-    content: '鉁?;
+    content: '✓';
     position: absolute;
     top: -1px;
     left: 5px;
@@ -259,7 +259,7 @@
     flex-shrink: 0;
   }
 
-  /* 鈹€鈹€ Progress 鈹€鈹€ */
+  /* ── Progress ── */
   .progress-bar-wrap {
     height: 8px;
     background: #e5e7eb;
@@ -279,7 +279,7 @@
     margin-top: 6px;
   }
 
-  /* 鈹€鈹€ Review card 鈹€鈹€ */
+  /* ── Review card ── */
   .review-card { margin-top: 20px; }
   .review-card textarea {
     width: 100%;
@@ -350,7 +350,7 @@
     white-space: nowrap;
   }
 
-  /* 鈹€鈹€ Heatmap mini 鈹€鈹€ */
+  /* ── Heatmap mini ── */
   .heatmap-wrap { margin-top: 20px; }
   .heatmap-wrap h2 {
     font-size: .9rem;
@@ -371,7 +371,7 @@
   .heat-cell.none  { background: #e5e7eb; }
   .heat-cell.future{ background: #f9fafb; border: 1px solid #e5e7eb; }
 
-  /* 鈹€鈹€ Jump to today 鈹€鈹€ */
+  /* ── Jump to today ── */
   .btn-today {
     padding: 6px 16px;
     border-radius: 20px;
@@ -384,7 +384,7 @@
   }
   .btn-today:hover { background: var(--pri-light); border-color: var(--pri); }
 
-  /* 鈹€鈹€ Responsive 鈹€鈹€ */
+  /* ── Responsive ── */
   @media (max-width: 768px) {
     .layout { flex-direction: column; }
     .sidebar {
@@ -418,12 +418,12 @@
 <body>
 
 <div class="header">
-  <h1><span>鈽€锔?/span> 鏆戝亣璁″垝琛?<span style="font-weight:400;color:var(--text2);font-size:.85rem;">2025.7.11 鈥?8.29</span></h1>
+  <h1><span>☀️</span> 暑假计划表 <span style="font-weight:400;color:var(--text2);font-size:.85rem;">2025.7.11 — 8.29</span></h1>
   <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
-    <span class="phase-tag" id="phaseTag">纭欢瀛︿範鏈?/span>
-    <button class="btn-today" onclick="goToday()">馃搷 鍥炲埌浠婂ぉ</button>
-    <button class="btn-today" onclick="exportData()" title="瀵煎嚭鏁版嵁鍒版枃浠?>馃摛 瀵煎嚭</button>
-    <button class="btn-today" onclick="document.getElementById('importFile').click()" title="浠庢枃浠跺鍏ユ暟鎹?>馃摜 瀵煎叆</button>
+    <span class="phase-tag" id="phaseTag">硬件学习期</span>
+    <button class="btn-today" onclick="goToday()">📍 回到今天</button>
+    <button class="btn-today" onclick="exportData()" title="导出数据到文件">📤 导出</button>
+    <button class="btn-today" onclick="document.getElementById('importFile').click()" title="从文件导入数据">📥 导入</button>
     <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">
   </div>
 </div>
@@ -436,69 +436,71 @@
   <!-- Main -->
   <div class="main">
     <div class="date-header">
-      <button class="nav-btn" onclick="shiftDate(-1)" title="鍓嶄竴澶?>鈼€</button>
-      <span class="big-date" id="bigDate">2025骞?鏈?1鏃?/span>
-      <span class="big-weekday" id="bigWeekday">鏄熸湡浜?/span>
-      <button class="nav-btn" onclick="shiftDate(1)" title="鍚庝竴澶?>鈻?/button>
+      <button class="nav-btn" onclick="shiftDate(-1)" title="前一天">◀</button>
+      <span class="big-date" id="bigDate">2025年7月11日</span>
+      <span class="big-weekday" id="bigWeekday">星期五</span>
+      <button class="nav-btn" onclick="shiftDate(1)" title="后一天">▶</button>
     </div>
 
     <div class="quote-bar" id="quoteBar">
-      <span class="quote-icon">馃挕</span>
+      <span class="quote-icon">💡</span>
       <span class="quote-text" id="quoteText"></span>
     </div>
 
     <div class="task-card">
-      <h2>馃摎 浠婃棩鏍稿績浠诲姟</h2>
+      <h2>📚 今日核心任务</h2>
       <div id="coreTasks"></div>
       <div class="progress-bar-wrap"><div class="progress-bar-fill" id="coreBar" style="width:0%"></div></div>
-      <div class="progress-text" id="coreProgress">0/0 瀹屾垚</div>
+      <div class="progress-text" id="coreProgress">0/0 完成</div>
     </div>
 
     <div class="task-card">
-      <h2>馃弮 姣忔棩涔犳儻</h2>
+      <h2>🏃 每日习惯</h2>
       <div id="habitTasks"></div>
       <div class="progress-bar-wrap"><div class="progress-bar-fill" id="habitBar" style="width:0%"></div></div>
-      <div class="progress-text" id="habitProgress">0/0 瀹屾垚</div>
+      <div class="progress-text" id="habitProgress">0/0 完成</div>
     </div>
 
     <div class="task-card" id="optionalCard" style="display:none;">
-      <h2>馃搵 棰濆浜嬮」</h2>
+      <h2>📋 额外事项</h2>
       <div id="optionalTasks"></div>
     </div>
 
     <div class="task-card review-card">
-      <h2>馃摑 姣忔棩澶嶇洏</h2>
-      <textarea id="reviewInput" placeholder="浠婂ぉ瀛﹀埌浜嗕粈涔堬紵鏈変粈涔堟敹鑾锋垨涓嶈冻锛熻褰曚笅鏉ヤ互鍚庡洖鐪?.."></textarea>
-      <div class="review-save-hint" id="reviewHint">馃捑 杈撳叆鍚庤嚜鍔ㄤ繚瀛?/div>
-      <span class="review-history-toggle" id="reviewToggle" onclick="toggleReviewHistory()">馃搮 鏌ョ湅鍘嗗彶澶嶇洏 鈻?/span>
+      <h2>📝 每日复盘</h2>
+      <textarea id="reviewInput" placeholder="今天学到了什么？有什么收获或不足？记录下来以后回看..."></textarea>
+      <div class="review-save-hint" id="reviewHint">💾 输入后自动保存</div>
+      <span class="review-history-toggle" id="reviewToggle" onclick="toggleReviewHistory()">📅 查看历史复盘 ▸</span>
       <div class="review-history-list" id="reviewHistory" style="display:none;"></div>
     </div>
 
     <!-- Heatmap -->
     <div class="heatmap-wrap">
-      <h2>馃搳 鎵撳崱鎬昏锛堢偣鍑绘柟鍧楀彲璺宠浆锛?/h2>
+      <h2>📊 打卡总览（点击方块可跳转）</h2>
       <div class="heatmap" id="heatmap"></div>
       <div style="display:flex;gap:16px;margin-top:8px;font-size:.75rem;color:var(--text2);">
-        <span>馃煝 鍏ㄩ儴瀹屾垚</span><span>馃煛 閮ㄥ垎瀹屾垚</span><span>猬?鏈畬鎴?/span><span>鈼伙笍 鏈埌鏉?/span>
+        <span>🟢 全部完成</span><span>🟡 部分完成</span><span>⬜ 未完成</span><span>◻️ 未到来</span>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  DATA: Plan definition
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?
+// ═══════════════════════════════════════
+//  DATA: Plan definition
+// ═══════════════════════════════════════
+
 const START_DATE = new Date(2025, 6, 11);  // July 11
 const END_DATE   = new Date(2025, 7, 29);  // Aug 29 (inclusive)
 
 // Phase definitions: { start (Date), end (Date), name, color, emoji }
 const PHASES = [
-  { start: new Date(2025,6,11), end: new Date(2025,6,12), name:'纭欢瀛︿範鏈?,       color:'#5b6fff', emoji:'馃攲' },
-  { start: new Date(2025,6,13), end: new Date(2025,6,13), name:'鎷撳睍鏉胯璁℃湡',     color:'#7c3aed', emoji:'馃帹' },
-  { start: new Date(2025,6,14), end: new Date(2025,6,17), name:'鐒婃帴涓庡皬杞︾粨鏋勬湡', color:'#f59e0b', emoji:'馃敡' },
-  { start: new Date(2025,6,18), end: new Date(2025,6,28), name:'鍗曠墖鏈哄涔犳湡',     color:'#0891b2', emoji:'馃捇' },
-  { start: new Date(2025,6,29), end: new Date(2025,7, 1), name:'鐢佃禌',            color:'#ef4444', emoji:'馃弫' },
-  { start: new Date(2025,7, 2), end: new Date(2025,7,29), name:'鏆戞湡鎻愬崌鏈?,       color:'#10b981', emoji:'馃彙' },
+  { start: new Date(2025,6,11), end: new Date(2025,6,12), name:'硬件学习期',       color:'#5b6fff', emoji:'🔌' },
+  { start: new Date(2025,6,13), end: new Date(2025,6,13), name:'拓展板设计期',     color:'#7c3aed', emoji:'🎨' },
+  { start: new Date(2025,6,14), end: new Date(2025,6,17), name:'焊接与小车结构期', color:'#f59e0b', emoji:'🔧' },
+  { start: new Date(2025,6,18), end: new Date(2025,6,28), name:'单片机学习期',     color:'#0891b2', emoji:'💻' },
+  { start: new Date(2025,6,29), end: new Date(2025,7, 1), name:'电赛',            color:'#ef4444', emoji:'🏁' },
+  { start: new Date(2025,7, 2), end: new Date(2025,7,29), name:'暑期提升期',       color:'#10b981', emoji:'🏡' },
 ];
 
 function getPhase(d) {
@@ -520,124 +522,127 @@ function generateTasks(d) {
 
   const phaseName = phase.name;
 
-  // 鈹€鈹€ Helper: isSpecialDay 鈹€鈹€
+  // ── Helper: isSpecialDay ──
   // Aug 2 = rest/travel day
   if (ds === '2025-08-02') {
-    // Rest day 鈥?only light habits
+    // Rest day — only light habits
     habits = [
-      { id:'meal',     label:'瑙勫緥涓夐',              time:'', optional:false },
-      { id:'sleep',    label:'鍏呰冻鐫＄湢锛堚墺7灏忔椂锛?,     time:'', optional:false },
-      { id:'rest',     label:'濂藉ソ浼戞伅锛屾梾閫斿钩瀹?馃С',  time:'', optional:false },
+      { id:'meal',     label:'规律三餐',              time:'', optional:false },
+      { id:'sleep',    label:'充足睡眠（≥7小时）',     time:'', optional:false },
+      { id:'rest',     label:'好好休息，旅途平安 🧳',  time:'', optional:false },
     ];
     return { core, habits, optional };
   }
 
-  // 鈹€鈹€ Core tasks by phase 鈹€鈹€
-  // 馃挕 涓婂崍9鐐瑰紑濮嬶紝姣忔銆?0鍒嗛挓涓撴敞 + 10鍒嗛挓浼戞伅銆嶏紝涓撴敞鍔涙湁闄愭洿瑕佸姵閫哥粨鍚?  switch (phaseName) {
-    case '纭欢瀛︿範鏈?:
+  // ── Core tasks by phase ──
+  // 💡 上午9点开始，每段「50分钟专注 + 10分钟休息」，专注力有限更要劳逸结合
+  switch (phaseName) {
+    case '硬件学习期':
       core = [
-        { id:'hw1', label:'鐢佃矾鍩虹瀛︿範',              time:'9:00-10:50', desc:'鐢靛帇鐢垫祦銆佺數闃荤數瀹广€佷簩鏋佺涓夋瀬绠″熀纭€锛?0+10鑺傚锛? },
-        { id:'hw2', label:'鍏冨櫒浠惰瘑鍒笌datasheet闃呰',  time:'11:00-11:50', desc:'甯歌灏佽銆佸紩鑴氬畾涔夈€佽姱鐗囨墜鍐岋紙杞婚噺鏁寸悊锛? },
-        { id:'hw3', label:'PCB璁捐鍩虹鍏ラ棬',            time:'14:00-15:50', desc:'绔嬪垱EDA鐣岄潰鎿嶄綔銆佸師鐞嗗浘缁樺埗娴佺▼' },
-        { id:'hw4', label:'鐒婃帴鐞嗚瀛︿範',               time:'16:00-17:50', desc:'鐒婃帴宸ュ叿璁よ瘑銆佹墜娉曟暀瀛﹁棰戙€佸畨鍏ㄨ鑼? },
+        { id:'hw1', label:'电路基础学习',              time:'9:00-10:50', desc:'电压电流、电阻电容、二极管三极管基础（50+10节奏）' },
+        { id:'hw2', label:'元器件识别与datasheet阅读',  time:'11:00-11:50', desc:'常见封装、引脚定义、芯片手册（轻量整理）' },
+        { id:'hw3', label:'PCB设计基础入门',            time:'14:00-15:50', desc:'立创EDA界面操作、原理图绘制流程' },
+        { id:'hw4', label:'焊接理论学习',               time:'16:00-17:50', desc:'焊接工具认识、手法教学视频、安全规范' },
       ];
       break;
 
-    case '鎷撳睍鏉胯璁℃湡':
+    case '拓展板设计期':
       core = [
-        { id:'pcb1', label:'鍘熺悊鍥捐璁?+ 鍏冨櫒浠堕€夊瀷',   time:'9:00-10:50', desc:'鏍规嵁闇€姹傜粯鍒跺師鐞嗗浘锛岀‘璁ゅ皝瑁呭拰鍨嬪彿' },
-        { id:'pcb2', label:'PCB甯冨眬瑙勫垝',               time:'11:00-11:50', desc:'鍏冨櫒浠舵憜鏀俱€佸垵姝ュ竷灞€锛堣交閲忔敹灏撅級' },
-        { id:'pcb3', label:'甯冪嚎璧扮嚎 + DRC妫€鏌?,        time:'14:00-15:50', desc:'鑷姩/鎵嬪姩甯冪嚎锛岃璁¤鍒欐鏌ワ紝淇閿欒' },
-        { id:'pcb4', label:'鏀跺熬瀹屽杽 + 瀵煎嚭3D妯″瀷',     time:'16:00-17:50', desc:'涓濆嵃璋冩暣銆佹渶缁堟鏌ャ€佸鍑篠TEP缁欐満姊扮粍' },
+        { id:'pcb1', label:'原理图设计 + 元器件选型',   time:'9:00-10:50', desc:'根据需求绘制原理图，确认封装和型号' },
+        { id:'pcb2', label:'PCB布局规划',               time:'11:00-11:50', desc:'元器件摆放、初步布局（轻量收尾）' },
+        { id:'pcb3', label:'布线走线 + DRC检查',        time:'14:00-15:50', desc:'自动/手动布线，设计规则检查，修正错误' },
+        { id:'pcb4', label:'收尾完善 + 导出3D模型',     time:'16:00-17:50', desc:'丝印调整、最终检查、导出STEP给机械组' },
       ];
       break;
 
-    case '鐒婃帴涓庡皬杞︾粨鏋勬湡':
+    case '焊接与小车结构期':
       if (ds === '2025-07-14') {
         core = [
-          { id:'sld1', label:'鐒婃帴缁冧範锛堝簾鏉跨粌鎵嬶級',    time:'9:00-10:50', desc:'鐢ㄥ簾鏉跨粌涔犵剨鐐癸紝鐔熸倝鐑欓搧娓╁害鍜岀剨閿℃祦鍔ㄦ€? },
-          { id:'sld2', label:'姝ｅ紡鐒婃帴鎷撳睍鏉匡紙涓婏級',     time:'11:00-11:50', desc:'鐒婃帴鐢甸樆銆佺數瀹广€佹帓閽堟帓姣嶏紝娉ㄦ剰鏋佹€? },
-          { id:'sld3', label:'姝ｅ紡鐒婃帴鎷撳睍鏉匡紙涓嬶級',     time:'14:00-15:50', desc:'瀹屾垚鍓╀綑鍏冨櫒浠剁剨鎺ワ紝妫€鏌ョ剨鐐硅川閲? },
-          { id:'sld4', label:'娴嬭瘯閫氭柇 + 淇ˉ瀹屽杽',     time:'16:00-17:50', desc:'涓囩敤琛ㄦ祴閫氭柇锛岃ˉ鐒婅櫄鐒婄偣锛岀‘淇濈數姘旇繛鎺ユ甯? },
+          { id:'sld1', label:'焊接练习（废板练手）',    time:'9:00-10:50', desc:'用废板练习焊点，熟悉烙铁温度和焊锡流动性' },
+          { id:'sld2', label:'正式焊接拓展板（上）',     time:'11:00-11:50', desc:'焊接电阻、电容、排针排母，注意极性' },
+          { id:'sld3', label:'正式焊接拓展板（下）',     time:'14:00-15:50', desc:'完成剩余元器件焊接，检查焊点质量' },
+          { id:'sld4', label:'测试通断 + 修补完善',     time:'16:00-17:50', desc:'万用表测通断，补焊虚焊点，确保电气连接正常' },
         ];
       } else if (ds === '2025-07-17') {
         core = [
-          { id:'buf1', label:'鏁磋溅鍔熻兘妫€鏌?+ 瀹屽杽缁嗚妭',  time:'9:00-10:50', desc:'娴嬭瘯鎵€鏈夋満姊扮粨鏋勫拰鐢垫皵杩炴帴锛屾煡婕忚ˉ缂? },
-          { id:'buf2', label:'浜よ溅缁欓槦鍙?馃帀',            time:'11:00-11:50', desc:'鏁寸悊鏂囨。+浜ゆ帴锛岄槦鍙嬪紑濮嬭皟璇? },
+          { id:'buf1', label:'整车功能检查 + 完善细节',  time:'9:00-10:50', desc:'测试所有机械结构和电气连接，查漏补缺' },
+          { id:'buf2', label:'交车给队友 🎉',            time:'11:00-11:50', desc:'整理文档+交接，队友开始调试' },
         ];
         habits = [
-          { id:'exercise', label:'杩愬姩30鍒嗛挓',             time:'16:00-16:30', optional:false },
-          { id:'meal',     label:'瑙勫緥涓夐',              time:'', optional:false },
-          { id:'sleep',    label:'鍏呰冻鐫＄湢锛堚墺7灏忔椂锛?,     time:'23:00鍓?, optional:false },
-          { id:'fun',      label:'涓嬪崍鑷敱鏀炬澗 馃幃',       time:'14:00鍚?, optional:false },
+          { id:'exercise', label:'运动30分钟',             time:'16:00-16:30', optional:false },
+          { id:'meal',     label:'规律三餐',              time:'', optional:false },
+          { id:'sleep',    label:'充足睡眠（≥7小时）',     time:'23:00前', optional:false },
+          { id:'fun',      label:'下午自由放松 🎮',       time:'14:00后', optional:false },
         ];
           return { core, habits, optional };
       } else {
         core = [
-          { id:'car1', label:'鐢诲皬杞︾粨鏋?+ 闆朵欢璁捐',    time:'9:00-10:50', desc:'搴曠洏銆佹偓鎸傘€佹ā鍧楀畨瑁呬綅鈫掑鍑哄姞宸ュ浘绾? },
-          { id:'car2', label:'缁撴瀯浼樺寲 + 瀵煎嚭鏂囦欢',       time:'11:00-11:50', desc:'骞叉秹妫€鏌ャ€佸昂瀵哥‘璁ゃ€佸鍑篋XF/STEP' },
-          { id:'car3', label:'闆朵欢鍔犲伐锛?D鎵撳嵃/鍒囧壊锛?,   time:'14:00-15:50', desc:'鎵撳嵃缁撴瀯浠躲€佸垏鍓叉澘鏉愩€佹竻鐞嗘敮鎾? },
-          { id:'car4', label:'缁勮灏忚溅 + 鍒濇璋冭瘯',       time:'16:00-17:50', desc:'瀹夎鐢垫満杞瓙銆佸浐瀹氭嫇灞曟澘銆佽蛋绾挎暣鐞? },
+          { id:'car1', label:'画小车结构 + 零件设计',    time:'9:00-10:50', desc:'底盘、悬挂、模块安装位→导出加工图纸' },
+          { id:'car2', label:'结构优化 + 导出文件',       time:'11:00-11:50', desc:'干涉检查、尺寸确认、导出DXF/STEP' },
+          { id:'car3', label:'零件加工（3D打印/切割）',   time:'14:00-15:50', desc:'打印结构件、切割板材、清理支撑' },
+          { id:'car4', label:'组装小车 + 初步调试',       time:'16:00-17:50', desc:'安装电机轮子、固定拓展板、走线整理' },
         ];
       }
       break;
 
-    case '鍗曠墖鏈哄涔犳湡':
+    case '单片机学习期':
       core = [
-        { id:'mcu1', label:'STM32鍩虹鍏ラ棬',             time:'9:00-10:50', desc:'GPIO銆佹椂閽熸爲銆佸瘎瀛樺櫒鎿嶄綔銆丠AL搴撶粨鏋? },
-        { id:'mcu2', label:'澶嶄範宸╁浐 + 灏忕粌涔?,          time:'11:00-11:50', desc:'鍥為【涓婂崍鍐呭锛屽啓绠€鍗曠▼搴忛獙璇侊紙杞婚噺锛? },
-        { id:'mcu3', label:'閫氫俊鍗忚涓庡璁鹃┍鍔?,        time:'14:00-15:50', desc:'I2C/SPI/UART椹卞姩浼犳劅鍣ㄥ拰妯″潡' },
-        { id:'mcu4', label:'缁煎悎瀹炶返 + 鍔ㄦ墜璋冭瘯',       time:'16:00-17:50', desc:'缁撳悎浼犳劅鍣ㄥ啓鎺у埗閫昏緫锛岀儳褰曡皟璇? },
+        { id:'mcu1', label:'STM32基础入门',             time:'9:00-10:50', desc:'GPIO、时钟树、寄存器操作、HAL库结构' },
+        { id:'mcu2', label:'复习巩固 + 小练习',          time:'11:00-11:50', desc:'回顾上午内容，写简单程序验证（轻量）' },
+        { id:'mcu3', label:'通信协议与外设驱动',        time:'14:00-15:50', desc:'I2C/SPI/UART驱动传感器和模块' },
+        { id:'mcu4', label:'综合实践 + 动手调试',       time:'16:00-17:50', desc:'结合传感器写控制逻辑，烧录调试' },
       ];
       break;
 
-    case '鐢佃禌':
+    case '电赛':
       core = [
-        { id:'race',  label:'鍏ㄥ姏澶囨垬鐢佃禌 馃弫',             time:'鍏ㄥぉ', desc:'灏忚溅鏈€缁堣皟璇曘€佽禌鍓嶆鏌ャ€佹寮忔瘮璧? },
+        { id:'race',  label:'全力备战电赛 🏁',             time:'全天', desc:'小车最终调试、赛前检查、正式比赛' },
       ];
       break;
 
-    case '鏆戞湡鎻愬崌鏈?:
+    case '暑期提升期':
       core = [
-        { id:'chs1', label:'鍏ㄥ悜杞簳鐩樿璁★紙涓婏級',      time:'9:00-10:20', desc:'RoboMaster搴曠洏缁撴瀯锛氬簳鐩樻鏋躲€佺數鏈哄竷灞€' },
-        { id:'chs2', label:'鍏ㄥ悜杞簳鐩樿璁★紙涓嬶級',      time:'10:30-12:00', desc:'鎮寕鏈烘瀯銆佸噺闇囪璁°€佹ā鍧楀畨瑁呬綅缃? },
-        { id:'exer', label:'閿荤偧韬綋 馃挭',                time:'14:00-15:30', desc:'鏈夋哀杩愬姩+鍔涢噺璁粌锛堝噺鑴備负涓伙紝1-1.5灏忔椂锛? },
-        { id:'mcu_h',label:'鍗曠墖鏈哄涔?/ 宓屽叆寮忓皬杞?,    time:'15:30-17:20', desc:'鐙珛鏅鸿兘灏忚溅椤圭洰锛氫粠闆舵惌寤鸿蒋纭欢' },
+        { id:'chs1', label:'全向轮底盘设计（上）',      time:'9:00-10:20', desc:'RoboMaster底盘结构：底盘框架、电机布局' },
+        { id:'chs2', label:'全向轮底盘设计（下）',      time:'10:30-12:00', desc:'悬挂机构、减震设计、模块安装位置' },
+        { id:'exer', label:'锻炼身体 💪',                time:'14:00-15:30', desc:'有氧运动+力量训练（减脂为主，1-1.5小时）' },
+        { id:'mcu_h',label:'单片机学习 / 嵌入式小车',    time:'15:30-17:20', desc:'独立智能小车项目：从零搭建软硬件' },
       ];
       optional = [
-        { id:'kaoyan', label:'浜嗚В鑰冪爺淇℃伅锛堥浂鏁ｆ椂闂达級', time:'22:00-22:30', desc:'闄㈡牎鏂瑰悜銆佽€冭瘯绉戠洰銆佸垎鏁扮嚎銆佹姤褰曟瘮' },
+        { id:'kaoyan', label:'了解考研信息（零散时间）', time:'22:00-22:30', desc:'院校方向、考试科目、分数线、报录比' },
       ];
       break;
   }
 
-  // 鈹€鈹€ Habits (shared) 鈹€鈹€
-  if (phaseName === '鐢佃禌') {
+  // ── Habits (shared) ──
+  if (phaseName === '电赛') {
     // During competition: only basic habits
     habits = [
-      { id:'meal',     label:'瑙勫緥涓夐',              time:'', optional:false },
-      { id:'sleep',    label:'鍏呰冻鐫＄湢锛堚墺7灏忔椂锛?,     time:'23:00鍓?, optional:false },
+      { id:'meal',     label:'规律三餐',              time:'', optional:false },
+      { id:'sleep',    label:'充足睡眠（≥7小时）',     time:'23:00前', optional:false },
     ];
-  } else if (phaseName === '鏆戞湡鎻愬崌鏈?) {
+  } else if (phaseName === '暑期提升期') {
     habits = [
-      { id:'meal',     label:'瑙勫緥涓夐',              time:'', optional:false },
-      { id:'sleep',    label:'鍏呰冻鐫＄湢锛堚墺7灏忔椂锛?,     time:'23:30鍓?, optional:false },
-      { id:'fun',      label:'鏅氫笂濞变箰 / 鏈嬪弸鑱氫細',   time:'19:00-22:00', optional:false },
+      { id:'meal',     label:'规律三餐',              time:'', optional:false },
+      { id:'sleep',    label:'充足睡眠（≥7小时）',     time:'23:30前', optional:false },
+      { id:'fun',      label:'晚上娱乐 / 朋友聚会',   time:'19:00-22:00', optional:false },
     ];
   } else {
     // School phases
     habits = [
-      { id:'exercise', label:'杩愬姩30鍒嗛挓',             time:'18:00-18:30', optional:false },
-      { id:'meal',     label:'瑙勫緥涓夐',              time:'', optional:false },
-      { id:'sleep',    label:'鍏呰冻鐫＄湢锛堚墺7灏忔椂锛?,     time:'23:00鍓?, optional:false },
-      { id:'fun',      label:'閫傚綋濞变箰鏀炬澗',          time:'19:30-22:00', optional:false },
+      { id:'exercise', label:'运动30分钟',             time:'18:00-18:30', optional:false },
+      { id:'meal',     label:'规律三餐',              time:'', optional:false },
+      { id:'sleep',    label:'充足睡眠（≥7小时）',     time:'23:00前', optional:false },
+      { id:'fun',      label:'适当娱乐放松',          time:'19:30-22:00', optional:false },
     ];
   }
 
   return { core, habits, optional };
 }
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  STATE
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?
+// ═══════════════════════════════════════
+//  STATE
+// ═══════════════════════════════════════
+
 let currentDate = new Date(START_DATE);
 let reviewData = {};  // { '2025-07-11': 'text...', ... }
 
@@ -655,36 +660,36 @@ function saveReviewData() {
 
 function renderQuote() {
   const quotes = [
-    '绉嶄竴妫垫爲鏈€濂界殑鏃堕棿鏄崄骞村墠锛屽叾娆℃槸鐜板湪銆?,
-    '浣犱笉鏄洜涓烘湁浜嗗笇鏈涙墠鍧氭寔锛岃€屾槸鍥犱负鍧氭寔浜嗘墠鏈夊笇鏈涖€?,
-    '涓撴敞鍔涙槸杩欎釜鏃朵唬鏈€绋€缂虹殑璧勬簮銆?,
-    '鎶婄畝鍗曠殑浜嬪仛鍒版瀬鑷达紝灏辨槸缁濇嫑銆?,
-    '浣犵殑鏃堕棿鑺卞湪鍝紝浣犵殑鎴愬氨灏卞湪鍝€?,
-    '鍒敤鎴樻湳涓婄殑鍕ゅ锛屾帺鐩栨垬鐣ヤ笂鐨勬噿鎯般€?,
-    '瀹屾垚姣斿畬缇庢洿閲嶈銆?,
-    '浠婂ぉ涓嶆兂璺戯紝鎵€浠ユ墠鍘昏窇銆傗€斺€旀潙涓婃槬鏍?,
-    '浣犱笉蹇呭緢鍘夊鎵嶈兘寮€濮嬶紝浣嗕綘蹇呴』寮€濮嬫墠浼氬緢鍘夊銆?,
-    '璁ょ煡鍐冲畾涓婇檺锛屾墽琛屽喅瀹氫笅闄愩€?,
-    '姣忎竴涓浣犱笉鑸掓湇鐨勭灛闂达紝閮芥槸鎴愰暱鐨勬満浼氥€?,
-    '鑷緥涓嶆槸鑷檺锛屾槸瀵规湭鏉ョ殑鑷繁璐熻矗銆?,
-    '涓嶈绛夊緟瀹岀編鐨勬椂鏈猴紝鎶撲綇褰撲笅銆?,
-    '濂界殑宸ョ▼甯堜笉鏄笉鐘敊锛岃€屾槸浼氳皟璇曘€?,
-    '鐭ヨ瘑鐨勫矝灞胯秺澶э紝鏃犵煡鐨勬捣宀哥嚎瓒婇暱銆?,
-    '澶у鏁颁汉鍦ㄧ鎴愬姛涓€姝ヤ箣閬ユ椂鏀惧純浜嗐€?,
-    '娌℃湁璁板綍灏辨病鏈夊彂鐢熴€傗€斺€斿郊寰椔峰痉椴佸厠',
-    '鍏堝畬鎴愬啀瀹岀編锛屽厛璺戦€氬啀浼樺寲銆?,
-    '鑱槑浜轰粠鑷繁鐨勯敊璇腑瀛︿範锛屾櫤鑰呬粠鍒汉鐨勯敊璇腑瀛︿範銆?,
-    '琛屽姩鏄不鎰堟亹鎯х殑鑹嵂銆?,
-    '鎱㈠氨鏄ǔ锛岀ǔ灏辨槸蹇€?,
-    '浣犱笉闇€瑕佸緢鑱槑锛屽彧闇€瑕佹瘮鍒汉澶氬潥鎸佷竴鍒嗛挓銆?,
-    '鏈€鍗遍櫓鐨勪笉鏄け璐ワ紝鑰屾槸浣犱粠鏈湡姝ｅ紑濮嬨€?,
-    '澶ч儴鍒嗕汉楂樹及浜嗕竴骞村唴鑳藉仛鐨勶紝浣庝及浜嗗崄骞村唴鑳藉仛鐨勩€傗€斺€旀瘮灏斅风洊鑼?,
-    '濡傛灉浣犱笉鑳界畝鍗曞湴瑙ｉ噴瀹冿紝璇存槑浣犺繕娌℃湁鐪熸鐞嗚В瀹冦€傗€斺€旇垂鏇?,
-    '涓嶆槸鐪嬪埌缁撴灉鎵嶅姫鍔涳紝鏄姫鍔涗簡鎵嶈兘鐪嬪埌缁撴灉銆?,
-    '姣忓ぉ杩涙1%锛屼竴骞村悗浣犱細寮哄ぇ37鍊嶃€?,
-    '楂樻墜鍜屾櫘閫氫汉鐨勫尯鍒細楂樻墜鎶婁竴浠朵簨鍋氫竴涓囬亶锛屾櫘閫氫汉鍋氫竴涓囦欢浜嬨€?,
-    '涓嶈鐢ㄨ韩浣撲笂鐨勫嫟濂嬶紝鎺╃洊澶ц剳涓婄殑鎳掓儼銆?,
-    '鏈€闅剧殑涓嶆槸瀛︿細鏂颁笢瑗匡紝鑰屾槸蹇樿鏃т範鎯€傗€斺€斿郊寰椔峰痉椴佸厠',
+    '种一棵树最好的时间是十年前，其次是现在。',
+    '你不是因为有了希望才坚持，而是因为坚持了才有希望。',
+    '专注力是这个时代最稀缺的资源。',
+    '把简单的事做到极致，就是绝招。',
+    '你的时间花在哪，你的成就就在哪。',
+    '别用战术上的勤奋，掩盖战略上的懒惰。',
+    '完成比完美更重要。',
+    '今天不想跑，所以才去跑。——村上春树',
+    '你不必很厉害才能开始，但你必须开始才会很厉害。',
+    '认知决定上限，执行决定下限。',
+    '每一个让你不舒服的瞬间，都是成长的机会。',
+    '自律不是自虐，是对未来的自己负责。',
+    '不要等待完美的时机，抓住当下。',
+    '好的工程师不是不犯错，而是会调试。',
+    '知识的岛屿越大，无知的海岸线越长。',
+    '大多数人在离成功一步之遥时放弃了。',
+    '没有记录就没有发生。——彼得·德鲁克',
+    '先完成再完美，先跑通再优化。',
+    '聪明人从自己的错误中学习，智者从别人的错误中学习。',
+    '行动是治愈恐惧的良药。',
+    '慢就是稳，稳就是快。',
+    '你不需要很聪明，只需要比别人多坚持一分钟。',
+    '最危险的不是失败，而是你从未真正开始。',
+    '大部分人高估了一年内能做的，低估了十年内能做的。——比尔·盖茨',
+    '如果你不能简单地解释它，说明你还没有真正理解它。——费曼',
+    '不是看到结果才努力，是努力了才能看到结果。',
+    '每天进步1%，一年后你会强大37倍。',
+    '高手和普通人的区别：高手把一件事做一万遍，普通人做一万件事。',
+    '不要用身体上的勤奋，掩盖大脑上的懒惰。',
+    '最难的不是学会新东西，而是忘记旧习惯。——彼得·德鲁克',
   ];
   const start = new Date(currentDate.getFullYear(), 0, 0);
   const diff = currentDate - start;
@@ -692,12 +697,12 @@ function renderQuote() {
   const idx = dayOfYear % quotes.length;
   let quoteText = quotes[idx];
   const phase = getPhase(currentDate);
-  if (phase && phase.name === '鏆戞湡鎻愬崌鏈?) {
+  if (phase && phase.name === '暑期提升期') {
     const totalDays = 28;
     const dayStart = new Date(2025, 7, 2);
     const elapsed = Math.max(1, Math.floor((currentDate - dayStart) / (1000*60*60*24)) + 1);
     const pct = Math.min(100, Math.round(elapsed / totalDays * 100));
-    quoteText += `<br><span class="chassis-progress">馃敡 鍏ㄥ悜杞簳鐩樿繘搴︼細${elapsed}/${totalDays} 澶╋紙${pct}%锛夆€?鍥炲鏍″墠蹇呴』鐢诲畬锛?/span>`;
+    quoteText += `<br><span class="chassis-progress">🔧 全向轮底盘进度：${elapsed}/${totalDays} 天（${pct}%）— 回学校前必须画完！</span>`;
   }
   document.getElementById('quoteText').innerHTML = quoteText;
 }
@@ -709,7 +714,7 @@ function renderReview() {
   const hint = document.getElementById('reviewHint');
   const saved = reviewData[ds] || '';
   if (textarea.value !== saved) textarea.value = saved;
-  hint.textContent = saved ? '馃捑 宸蹭繚瀛?路 ' + saved.length + '瀛? : '馃捑 杈撳叆鍚庤嚜鍔ㄤ繚瀛?;
+  hint.textContent = saved ? '💾 已保存 · ' + saved.length + '字' : '💾 输入后自动保存';
 }
 
 // Auto-save review on input
@@ -735,21 +740,21 @@ function toggleReviewHistory() {
     // Build history list
     const entries = Object.entries(reviewData).filter(([k,v]) => v.trim()).sort((a,b) => b[0].localeCompare(a[0]));
     if (entries.length === 0) {
-      list.innerHTML = '<div style="padding:14px;color:#9ca3af;font-size:.82rem;">鏆傛棤澶嶇洏璁板綍</div>';
+      list.innerHTML = '<div style="padding:14px;color:#9ca3af;font-size:.82rem;">暂无复盘记录</div>';
     } else {
       list.innerHTML = entries.map(([k,v]) => {
         const preview = v.replace(/\n/g, ' ').substring(0, 60);
         return `<div class="review-history-item" onclick="goDate('${k}'); toggleReviewHistory();">
-          <div class="rh-date">馃搮 ${k}</div>
+          <div class="rh-date">📅 ${k}</div>
           <div class="rh-preview">${preview}${v.length>60?'...':''}</div>
         </div>`;
       }).join('');
     }
     list.style.display = 'block';
-    toggle.innerHTML = '馃搮 鏀惰捣鍘嗗彶 鈻?;
+    toggle.innerHTML = '📅 收起历史 ▾';
   } else {
     list.style.display = 'none';
-    toggle.innerHTML = '馃搮 鏌ョ湅鍘嗗彶澶嶇洏 鈻?;
+    toggle.innerHTML = '📅 查看历史复盘 ▸';
   }
 }
 
@@ -783,18 +788,20 @@ function getDayData(d) {
   return data[ds];
 }
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  RENDER
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?
+// ═══════════════════════════════════════
+//  RENDER
+// ═══════════════════════════════════════
+
 function renderSidebar() {
   const sb = document.getElementById('sidebar');
   let html = '';
   let lastMonth = -1;
-  const months = ['7鏈?, '8鏈?];
+  const months = ['7月', '8月'];
 
   for (let d = new Date(START_DATE); d <= END_DATE; d.setDate(d.getDate()+1)) {
     const m = d.getMonth();
     if (m !== lastMonth) {
-      html += `<div class="month-label">2025骞?{months[m-6]}</div>`;
+      html += `<div class="month-label">2025年${months[m-6]}</div>`;
       lastMonth = m;
     }
     const ds = dateStr(d);
@@ -816,9 +823,9 @@ function renderSidebar() {
     else if (total === 0) dotClass = 'future';
 
     const active = dateEq(d, currentDate) ? ' active' : '';
-    const weekdays = ['鏃?,'涓€','浜?,'涓?,'鍥?,'浜?,'鍏?];
+    const weekdays = ['日','一','二','三','四','五','六'];
     html += `
-      <div class="date-row${active}" onclick="goDate('${ds}')" title="${ds} 路 ${done}/${total}">
+      <div class="date-row${active}" onclick="goDate('${ds}')" title="${ds} · ${done}/${total}">
         <span class="dot ${dotClass}"></span>
         <span class="day-num">${d.getDate()}</span>
         <span class="weekday">${weekdays[d.getDay()]}</span>
@@ -838,11 +845,11 @@ function renderMain() {
   const tasks = generateTasks(currentDate);
   const dayData = getDayData(currentDate);
 
-  const weekdays = ['鏃?,'涓€','浜?,'涓?,'鍥?,'浜?,'鍏?];
+  const weekdays = ['日','一','二','三','四','五','六'];
   document.getElementById('bigDate').textContent =
-    `${currentDate.getFullYear()}骞?{currentDate.getMonth()+1}鏈?{currentDate.getDate()}鏃;
+    `${currentDate.getFullYear()}年${currentDate.getMonth()+1}月${currentDate.getDate()}日`;
   document.getElementById('bigWeekday').textContent =
-    `鏄熸湡${weekdays[currentDate.getDay()]}`;
+    `星期${weekdays[currentDate.getDay()]}`;
 
   // Phase tag
   const phase = getPhase(currentDate);
@@ -851,16 +858,16 @@ function renderMain() {
     phaseTag.textContent = `${phase.emoji} ${phase.name}`;
     phaseTag.style.background = phase.color;
   } else {
-    phaseTag.textContent = '鑷敱鏃?;
+    phaseTag.textContent = '自由日';
     phaseTag.style.background = '#9ca3af';
   }
 
   // Render core tasks
   const coreDiv = document.getElementById('coreTasks');
   if (tasks.core.length === 0) {
-    coreDiv.innerHTML = '<div style="color:#9ca3af;font-size:.85rem;padding:8px 0;">浠婃棩鏃犳牳蹇冧换鍔?馃帀</div>';
+    coreDiv.innerHTML = '<div style="color:#9ca3af;font-size:.85rem;padding:8px 0;">今日无核心任务 🎉</div>';
     document.getElementById('coreBar').style.width = '0%';
-    document.getElementById('coreProgress').textContent = '0/0 瀹屾垚';
+    document.getElementById('coreProgress').textContent = '0/0 完成';
   } else {
     coreDiv.innerHTML = tasks.core.map(t => {
       const checked = dayData[t.id] ? ' checked' : '';
@@ -901,7 +908,7 @@ function renderMain() {
         <div class="task-item${doneClass}">
           <input class="task-check" type="checkbox" data-id="${t.id}"${checked} onchange="toggleTask('${t.id}', this.checked)">
           <span class="task-label">${t.label}${t.desc ? `<br><small style="color:#9ca3af;">${t.desc}</small>` : ''}</span>
-          <span class="task-optional">鍙€?/span>
+          <span class="task-optional">可选</span>
           ${t.time ? `<span class="task-time">${t.time}</span>` : ''}
         </div>`;
     }).join('');
@@ -920,7 +927,7 @@ function updateProgress(section, tasks, dayData) {
   const done = tasks.filter(t => dayData[t.id]).length;
   const pct = total > 0 ? Math.round(done/total*100) : 0;
   document.getElementById(section+'Bar').style.width = pct+'%';
-  document.getElementById(section+'Progress').textContent = `${done}/${total} 瀹屾垚`;
+  document.getElementById(section+'Progress').textContent = `${done}/${total} 完成`;
 }
 
 function toggleTask(taskId, checked) {
@@ -931,7 +938,7 @@ function toggleTask(taskId, checked) {
   renderMain();
 }
 
-// 鈹€鈹€ Heatmap 鈹€鈹€
+// ── Heatmap ──
 function renderHeatmap() {
   const hm = document.getElementById('heatmap');
   let html = '';
@@ -955,12 +962,12 @@ function renderHeatmap() {
     else if (total === 0) cls = 'future';
 
     const active = dateEq(d, currentDate) ? ' style="outline:2px solid #5b6fff;z-index:2;"' : '';
-    html += `<div class="heat-cell ${cls}"${active} onclick="goDate('${ds}')" title="${ds} 路 ${done}/${total}"></div>`;
+    html += `<div class="heat-cell ${cls}"${active} onclick="goDate('${ds}')" title="${ds} · ${done}/${total}"></div>`;
   }
   hm.innerHTML = html;
 }
 
-// 鈹€鈹€ Export / Import 鈹€鈹€
+// ── Export / Import ──
 function exportData() {
   const exportObj = { tasks: data, reviews: reviewData, exportedAt: new Date().toISOString() };
   const blob = new Blob([JSON.stringify(exportObj, null, 2)], { type: 'application/json' });
@@ -979,21 +986,23 @@ function importData(event) {
   reader.onload = function(e) {
     try {
       const imported = JSON.parse(e.target.result);
-      if (!imported.tasks && !imported.reviews) { alert('鉂?鏂囦欢鏍煎紡涓嶆纭?); return; }
-      const d = imported.exportedAt ? new Date(imported.exportedAt).toLocaleString() : '鏈煡鏃堕棿';
-      if (!confirm(`鍗冲皢瀵煎叆 ${d} 鐨勫浠姐€俓n\n褰撳墠鏁版嵁灏嗚瑕嗙洊锛岀‘瀹氱户缁紵`)) return;
+      if (!imported.tasks && !imported.reviews) { alert('❌ 文件格式不正确'); return; }
+      const d = imported.exportedAt ? new Date(imported.exportedAt).toLocaleString() : '未知时间';
+      if (!confirm(`即将导入 ${d} 的备份。\n\n当前数据将被覆盖，确定继续？`)) return;
       if (imported.tasks) { data = imported.tasks; saveData(); }
       if (imported.reviews) { reviewData = imported.reviews; saveReviewData(); }
-      alert('鉁?瀵煎叆鎴愬姛锛?);
+      alert('✅ 导入成功！');
       renderMain();
-    } catch(err) { alert('鉂?瑙ｆ瀽澶辫触锛? + err.message); }
+    } catch(err) { alert('❌ 解析失败：' + err.message); }
   };
   reader.readAsText(file);
   event.target.value = '';
 }
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  NAVIGATION
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?
+// ═══════════════════════════════════════
+//  NAVIGATION
+// ═══════════════════════════════════════
+
 function goDate(ds) {
   const [y,m,d] = ds.split('-').map(Number);
   currentDate = new Date(y, m-1, d);
@@ -1018,15 +1027,17 @@ function goToday() {
   renderMain();
 }
 
-// 鈹€鈹€ Keyboard navigation 鈹€鈹€
+// ── Keyboard navigation ──
 document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft')  { e.preventDefault(); shiftDate(-1); }
   if (e.key === 'ArrowRight') { e.preventDefault(); shiftDate(1); }
   if (e.key === 't') { e.preventDefault(); goToday(); }
 });
 
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  INIT
-// 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?
+// ═══════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════
+
 loadData();
 loadReviewData();
 setupReviewAutoSave();
