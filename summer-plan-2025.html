@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<!-- v2 · 2025-07-11 -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>☀️ 暑假计划表 2025 · 7.11 — 8.29</title>
 <style>
@@ -1022,7 +1023,7 @@ function goToday() {
   const today = new Date();
   today.setHours(0,0,0,0);
   if (today < START_DATE) { currentDate = new Date(START_DATE); }
-  else if (today > END_DATE) { currentDate = new Date(START_DATE); }
+  else if (today > END_DATE) { currentDate = new Date(END_DATE); }
   else { currentDate = today; }
   renderMain();
 }
@@ -1046,8 +1047,10 @@ const today = new Date();
 today.setHours(0,0,0,0);
 if (today >= START_DATE && today <= END_DATE) {
   currentDate = today;
-} else {
+} else if (today < START_DATE) {
   currentDate = new Date(START_DATE);
+} else {
+  currentDate = new Date(END_DATE);
 }
 renderMain();
 </script>
