@@ -2,9 +2,9 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<!-- v2 · 2025-07-11 -->
+<!-- v2 · 2026-07-11 -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>☀️ 暑假计划表 2025 · 7.11 — 8.29</title>
+<title>☀️ 暑假计划表 2026 · 7.11 — 8.29</title>
 <style>
   :root {
     --bg: #f3f4f6;
@@ -419,7 +419,7 @@
 <body>
 
 <div class="header">
-  <h1><span>☀️</span> 暑假计划表 <span style="font-weight:400;color:var(--text2);font-size:.85rem;">2025.7.11 — 8.29</span></h1>
+  <h1><span>☀️</span> 暑假计划表 <span style="font-weight:400;color:var(--text2);font-size:.85rem;">2026.7.11 — 8.29</span></h1>
   <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
     <span class="phase-tag" id="phaseTag">硬件学习期</span>
     <button class="btn-today" onclick="goToday()">📍 回到今天</button>
@@ -438,7 +438,7 @@
   <div class="main">
     <div class="date-header">
       <button class="nav-btn" onclick="shiftDate(-1)" title="前一天">◀</button>
-      <span class="big-date" id="bigDate">2025年7月11日</span>
+      <span class="big-date" id="bigDate">2026年7月11日</span>
       <span class="big-weekday" id="bigWeekday">星期五</span>
       <button class="nav-btn" onclick="shiftDate(1)" title="后一天">▶</button>
     </div>
@@ -491,12 +491,12 @@
 //  DATA: Plan definition
 // ═══════════════════════════════════════
 
-const START_DATE = new Date(2025, 6, 11);  // July 11
-const END_DATE   = new Date(2025, 7, 29);  // Aug 29 (inclusive)
+const START_DATE = new Date(2026, 6, 11);  // July 11
+const END_DATE   = new Date(2026, 7, 29);  // Aug 29 (inclusive)
 
-// Normalize any date to plan year (2025), clamp by month-day
+// Normalize any date to plan year (2026), clamp by month-day
 function clampToPlanDate(date) {
-  const planDate = new Date(2025, date.getMonth(), date.getDate());
+  const planDate = new Date(2026, date.getMonth(), date.getDate());
   if (planDate < START_DATE) return new Date(START_DATE);
   if (planDate > END_DATE) return new Date(END_DATE);
   return planDate;
@@ -504,12 +504,12 @@ function clampToPlanDate(date) {
 
 // Phase definitions: { start (Date), end (Date), name, color, emoji }
 const PHASES = [
-  { start: new Date(2025,6,11), end: new Date(2025,6,12), name:'硬件学习期',       color:'#5b6fff', emoji:'🔌' },
-  { start: new Date(2025,6,13), end: new Date(2025,6,13), name:'拓展板设计期',     color:'#7c3aed', emoji:'🎨' },
-  { start: new Date(2025,6,14), end: new Date(2025,6,17), name:'焊接与小车结构期', color:'#f59e0b', emoji:'🔧' },
-  { start: new Date(2025,6,18), end: new Date(2025,6,28), name:'单片机学习期',     color:'#0891b2', emoji:'💻' },
-  { start: new Date(2025,6,29), end: new Date(2025,7, 1), name:'电赛',            color:'#ef4444', emoji:'🏁' },
-  { start: new Date(2025,7, 2), end: new Date(2025,7,29), name:'暑期提升期',       color:'#10b981', emoji:'🏡' },
+  { start: new Date(2026,6,11), end: new Date(2026,6,12), name:'硬件学习期',       color:'#5b6fff', emoji:'🔌' },
+  { start: new Date(2026,6,13), end: new Date(2026,6,13), name:'拓展板设计期',     color:'#7c3aed', emoji:'🎨' },
+  { start: new Date(2026,6,14), end: new Date(2026,6,17), name:'焊接与小车结构期', color:'#f59e0b', emoji:'🔧' },
+  { start: new Date(2026,6,18), end: new Date(2026,6,28), name:'单片机学习期',     color:'#0891b2', emoji:'💻' },
+  { start: new Date(2026,6,29), end: new Date(2026,7, 1), name:'电赛',            color:'#ef4444', emoji:'🏁' },
+  { start: new Date(2026,7, 2), end: new Date(2026,7,29), name:'暑期提升期',       color:'#10b981', emoji:'🏡' },
 ];
 
 function getPhase(d) {
@@ -533,7 +533,7 @@ function generateTasks(d) {
 
   // ── Helper: isSpecialDay ──
   // Aug 2 = rest/travel day
-  if (ds === '2025-08-02') {
+  if (ds === '2026-08-02') {
     // Rest day — only light habits
     habits = [
       { id:'meal',     label:'规律三餐',              time:'', optional:false },
@@ -565,14 +565,14 @@ function generateTasks(d) {
       break;
 
     case '焊接与小车结构期':
-      if (ds === '2025-07-14') {
+      if (ds === '2026-07-14') {
         core = [
           { id:'sld1', label:'焊接练习（废板练手）',    time:'9:00-10:50', desc:'用废板练习焊点，熟悉烙铁温度和焊锡流动性' },
           { id:'sld2', label:'正式焊接拓展板（上）',     time:'11:00-11:50', desc:'焊接电阻、电容、排针排母，注意极性' },
           { id:'sld3', label:'正式焊接拓展板（下）',     time:'14:00-15:50', desc:'完成剩余元器件焊接，检查焊点质量' },
           { id:'sld4', label:'测试通断 + 修补完善',     time:'16:00-17:50', desc:'万用表测通断，补焊虚焊点，确保电气连接正常' },
         ];
-      } else if (ds === '2025-07-17') {
+      } else if (ds === '2026-07-17') {
         core = [
           { id:'buf1', label:'整车功能检查 + 完善细节',  time:'9:00-10:50', desc:'测试所有机械结构和电气连接，查漏补缺' },
           { id:'buf2', label:'交车给队友 🎉',            time:'11:00-11:50', desc:'整理文档+交接，队友开始调试' },
@@ -653,7 +653,7 @@ function generateTasks(d) {
 // ═══════════════════════════════════════
 
 let currentDate = new Date(START_DATE);
-let reviewData = {};  // { '2025-07-11': 'text...', ... }
+let reviewData = {};  // { '2026-07-11': 'text...', ... }
 
 function loadReviewData() {
   try {
@@ -708,7 +708,7 @@ function renderQuote() {
   const phase = getPhase(currentDate);
   if (phase && phase.name === '暑期提升期') {
     const totalDays = 28;
-    const dayStart = new Date(2025, 7, 2);
+    const dayStart = new Date(2026, 7, 2);
     const elapsed = Math.max(1, Math.floor((currentDate - dayStart) / (1000*60*60*24)) + 1);
     const pct = Math.min(100, Math.round(elapsed / totalDays * 100));
     quoteText += `<br><span class="chassis-progress">🔧 全向轮底盘进度：${elapsed}/${totalDays} 天（${pct}%）— 回学校前必须画完！</span>`;
@@ -781,14 +781,14 @@ function dateEq(a, b) {
 
 function loadData() {
   try {
-    const raw = localStorage.getItem('summer-plan-2025');
+    const raw = localStorage.getItem('summer-plan-2026');
     if (raw) data = JSON.parse(raw);
     else data = {};
   } catch(e) { data = {}; }
 }
 
 function saveData() {
-  localStorage.setItem('summer-plan-2025', JSON.stringify(data));
+  localStorage.setItem('summer-plan-2026', JSON.stringify(data));
 }
 
 function getDayData(d) {
@@ -810,7 +810,7 @@ function renderSidebar() {
   for (let d = new Date(START_DATE); d <= END_DATE; d.setDate(d.getDate()+1)) {
     const m = d.getMonth();
     if (m !== lastMonth) {
-      html += `<div class="month-label">2025年${months[m-6]}</div>`;
+      html += `<div class="month-label">2026年${months[m-6]}</div>`;
       lastMonth = m;
     }
     const ds = dateStr(d);
